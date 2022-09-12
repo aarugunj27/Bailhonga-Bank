@@ -4,9 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
         <link rel="stylesheet" href="static/css/style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
         <title>Home</title>
     </head>
     <header>
@@ -43,78 +46,48 @@
           </nav>
     </header>
     <body>
-      <!-- Images used to open the lightbox -->
-      <div class="row1">
-        <div class="column1">
-          <img src="static/images/57AnnualReport.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-        </div>
-        <div class="column1">
-          <img src="static/images/Bank_Details.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-        </div>
-        <div class="column1">
-          <img src="static/images/BankPresidents.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
-        </div>
-        <div class="column1">
-          <img src="static/images/BoardMemebers.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
-        </div>
-        <div class="column1">
-          <img src="static/images/InMemory_SSMoogi.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
-        </div>
-        <div class="column1">
-          <img src="static/images/MahantShivyogi.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
-        </div>
-        <div class="column1">
-          <img src="static/images/Sahitya_Aaladkatti_IAS.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
-        </div>
-      </div>
-
-      <!-- The Modal/Lightbox -->
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-
-          <div class="mySlides">
-            <div class="numbertext">1 / 7</div>
-            <img src="static/images/57AnnualReport.png" style="width:100%">
+      <div class="container-fluid">
+        <div class="row mt-4">
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="static/images/57AnnualReport.png" class="fancybox" data-fancybox="gallery1">
+              <img src="static/images/57AnnualReport.png" width="100%" height="100%">
+            </a>
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">2 / 7</div>
-            <img src="static/images/Bank_Details.png" style="width:100%">
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="static/images/Bank_Details.png" class="fancybox" data-fancybox="gallery1">
+              <img src="static/images/Bank_Details.png" width="100%" height="100%">
+            </a>
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">3 / 7</div>
-            <img src="static/images/BankPresidents.png" style="width:100%">
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="static/images/BankPresidents.png" class="fancybox" data-fancybox="gallery1">
+              <img src="static/images/BankPresidents.png" width="100%" height="100%">
+            </a>
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">4 / 7</div>
-            <img src="static/images/BoardMemebers.png" style="width:100%">
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="static/images/BoardMemebers.png" class="fancybox" data-fancybox="gallery1">
+              <img src="static/images/BoardMemebers.png" width="100%" height="100%">
+            </a>
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">5 / 7</div>
-            <img src="static/images/InMemory_SSMoogi.png" style="width:100%">
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="static/images/InMemory_SSMoogi.png" class="fancybox" data-fancybox="gallery1">
+              <img src="static/images/InMemory_SSMoogi.png" width="100%" height="100%">
+            </a>
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">6 / 7</div>
-            <img src="static/images/MahantShivyogi.png" style="width:100%">
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="static/images/MahantShivyogi.png" class="fancybox" data-fancybox="gallery1">
+              <img src="static/images/MahantShivyogi.png" width="100%" height="100%">
+            </a>
           </div>
 
-          <div class="mySlides">
-            <div class="numbertext">7 / 7</div>
-            <img src="static/images/Sahitya_Aaladkatti_IAS.png" style="width:100%">
-          </div>
-
-          <!-- Next/previous controls -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-          <!-- Caption text -->
-          <div class="caption-container">
-            <p id="caption"></p>
+          <div class="item col-sm-6 col-md-4 mb-3">
+            <a href="static/images/Sahitya_Aaladkatti_IAS.png" class="fancybox" data-fancybox="gallery1">
+              <img src="static/images/Sahitya_Aaladkatti_IAS.png" width="100%" height="100%">
+            </a>
           </div>
         </div>
       </div>
