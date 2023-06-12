@@ -43,7 +43,8 @@
     </header>
     <body>
         <div class="box"><center>
-            <form name="contact" method="post" data-netlify="true">
+            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input class="d-none" name="bot-field";
               <h1>Contact Us</h1>
                 <input type="text" name="message-name" class="name" placeholder="Please enter your Name" required>
                 <input type="email" name="message-email" class="email" placeholder="Please enter your Email" required>
